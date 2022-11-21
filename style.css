@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@600&family=Noto+Sans:wght@300;600&family=Playfair+Display&family=Romanesco&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.fixed{
+    position: fixed;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    display: block;
+}
+.fixed a{
+    text-decoration: 0px;
+}
+.fixed div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(98, 96, 96, 0.401);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 'background-color';
+    transition-duration: 2s;
+}
+.fixed i{
+    color: white;
+}
+.fixed div:hover{
+    background-color: rgba(71, 71, 71, 0.482);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+@media(max-height:600px){
+    .fixed div{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.nav{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    z-index: 3;
+    position: relative;
+    top: -45px;
+}
+
+.brand{
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+.navName{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-weight:400;
+    cursor: pointer;
+    text-decoration: 0px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.navName:hover{
+    color: rgb(176, 171, 171);
+}
+@media(max-width: 600px){
+    .navName{
+        font-size: 10.1px;
+        position: relative;
+        top: 5px;
+    }
+}
+@media(min-width: 600px) and (max-width: 1000px){
+    .navName{
+        font-size: 15px;
+        position: relative;
+        top: 7px;
+    }
+}
+@media(min-width: 1000px){
+    .navName{
+        font-size: 20px;
+    }
+}
+
+.form{
+    width: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 35px;
+    background-color: rgba(248, 248, 248, 0);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.form:hover{
+    background-color: rgba(255, 255, 255, 0.571);
+}
+.btn{
+    height: 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 600px){
+    .form{
+        width: 100px;
+        height: 20px;
+    }
+    .btn{
+        height: 20px;
+        width: 50px;
+    }
+}
+@media(min-width: 600px) and (max-width: 1000px){
+    .form{
+        width: 250px;
+        height: 30px;
+    }
+    .btn{
+        height: 30px;
+        width: 100px;
+    }
+}
+@media(min-width: 1000px){
+    .form{
+        width: 250px;
+        height: 30px;
+    }
+    .btn{
+        height: 30px;
+        width: 100px;
+    }
+}
+
+
+.head{
+    z-index: -1;
+}
+
+.headerimg{
+    width: 100%;
+    height: auto;
+}
+
+
+.fact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./oldnyc2.jpg');
+    background-attachment: fixed;
+    z-index: 1;
+    position: relative;
+    bottom: 40px;
+}
+
+.cityFact{
+    font-family: 'Romanesco', 'cursive';
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+@media(max-width: 600px){
+    .cityFact{
+        font-size: 30px;
+    }
+    .fact{
+        height: 400px;
+    }
+}
+@media(min-width: 600px) and (max-width: 1000px){
+    .cityFact{
+        font-size: 40px;
+    }
+    .fact{
+        height: 400px;
+    }
+}
+@media(min-width: 1000px){
+    .cityFact{
+        font-size: 50px;
+        padding: 100px;
+    }
+    .fact{
+        height: 500px;
+    }
+}
+
+.his{
+    height: auto;
+    background-color: rgba(149, 144, 144, 0.832);
+    padding: 20px;
+    position: relative;
+    bottom: 40px;
+}
+
+.his h1{
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+}
+.his p{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+@media(min-width:1000px){
+    .his p{
+        padding: 10px;
+    }
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: block; 
+}
+.ch1{
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.262);
+    cursor: pointer;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.ch1:focus,
+.ch1:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 600px){
+    .ch1{
+        width: 400px;
+        height: 200px;
+    }
+}
+@media(min-width: 1000px){
+    .ch1{
+        width: 600px;
+        height: 300px;
+    }
+}
+
+.imgch1{
+    height: 100%;
+    width: 40%;
+    flex: 0 4 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgch1 img{
+    border-radius: 10px;
+}
+
+.titlech1{
+    height: 100%;
+    width: 60%;
+    flex: 0 6 60%;
+    display: flex;
+    align-items: center;
+}
+.titlech1 h3{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+@media(max-width: 600px){
+    .titlech1 h3{
+        font-size: 20px;
+    }
+}
+
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    position: relative;
+    top: -60px;
+}
+
+
+
+
+
+
